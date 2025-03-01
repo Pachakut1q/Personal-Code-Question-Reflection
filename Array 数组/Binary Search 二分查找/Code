@@ -1,3 +1,4 @@
+//给定数组是升序且无重复元素的
 //两种方法，区别在于区间设置的不同。A函数定义target在区间[left,right]，B函数定义target在区间[left,right)  
 
 int binarySearchA(vector<int>& nums, int target)
@@ -23,7 +24,7 @@ int binarySearchA(vector<int>& nums, int target)
 		}
 	}
 
-	return -1;
+	return -1;//没找到target就返回-1
 }
 
 int binarySearchB(vector<int>& nums, int target)
